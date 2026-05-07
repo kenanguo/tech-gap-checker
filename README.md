@@ -6,7 +6,7 @@
 
 ## 谁需要这个
 
-你懂产品、懂业务，但不太懂后端/运维/安全。你跟 AI 说"帮我做一个 XX"，AI 写了代码——但你总发现要补东西：怎么存数据？怎么部署？多个人同时用怎么办？
+你跟 AI 说清楚需求，它开始写代码。但数据库、部署、用户系统——这些你没提的，它不会主动替你想。你总是发现要补东西：数据怎么存？怎么部署？多个人同时用怎么办？
 
 这个 Skill 就是补你不需要懂的那部分。你负责说"做什么"，它负责说"还缺什么"。
 
@@ -107,7 +107,7 @@ AI 写代码默认是 System 1——直觉快反应，你说啥它写啥。
 
 ## Who needs this
 
-You know product and business, but not backend, DevOps, or security. You tell AI "build me an app that does X" — AI writes the code, but you always find yourself patching holes: where does the data go? How do I deploy it? What if multiple people use it at once?
+You describe what you want. AI starts coding. But database, deployment, user auth — the things you didn't mention, it won't proactively think of. You always find yourself patching holes: where does data go? How do I deploy? What about multiple users?
 
 This Skill fills in what you shouldn't have to know. You say *what* to build. It says *what's missing*.
 
