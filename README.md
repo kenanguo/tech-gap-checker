@@ -87,6 +87,16 @@ cp /tmp/tech-gap-checker/SKILL.md ~/.claude/skills/tech-gap-checker/
 
 ---
 
+## 原理
+
+AI 写代码默认是 System 1——直觉快反应，你说啥它写啥。
+
+这个 Skill 强制它先跑一轮 **System 2**——慢思考、全局审查、把看不见的东西照出来。
+
+> *"Thinking, Fast and Slow" — Daniel Kahneman*
+
+---
+
 ## License
 
 MIT
