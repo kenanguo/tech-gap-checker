@@ -97,6 +97,107 @@ AI 写代码默认是 System 1——直觉快反应，你说啥它写啥。
 
 ---
 
+## English
+
+# 🔍 Tech Gap Checker
+
+> Before AI writes a single line of code, scan your project for every hidden technical gap.
+
+---
+
+## Who needs this
+
+You know product and business, but not backend, DevOps, or security. You tell AI "build me an app that does X" — AI writes the code, but you always find yourself patching holes: where does the data go? How do I deploy it? What if multiple people use it at once?
+
+This Skill fills in what you shouldn't have to know. You say *what* to build. It says *what's missing*.
+
+---
+
+## What it does
+
+Before AI starts coding, it automatically scans eight dimensions:
+
+| Dimension | What it asks |
+|-----------|-------------|
+| 👥 Multi-user | Separate devices or shared screen? Rooms? Real-time sync? |
+| 💾 Data storage | Where does data live? Survives a refresh? Database needed? |
+| 🔐 User system | How to tell users apart? Login or nickname? Permissions? |
+| 📡 Real-time | Should one user's action appear instantly for others? |
+| 🚀 Deployment | Frontend where? Backend where? Enough free tier? |
+| 🧩 Third-party | Database service? Payments? Image hosting? AI APIs? |
+| 🛡️ Security | Input sanitization? Rate limiting? Sensitive data handling? |
+| 📱 Mobile | Works on phones? Touch gestures? Portrait vs landscape? |
+
+Each dimension gets one of three flags: ✅ covered  ‖  ⚠️ gap (you didn't mention, but the project needs it)  ‖  ❌ not applicable (with reason)
+
+Then it delivers a **recommended tech stack** with free tier limits — ready to use.
+
+---
+
+## What you get
+
+After scanning, you'll see:
+
+```
+📋 Parts Checklist
+✅ Frontend: React (mentioned)
+✅ Hosting: Vercel (mentioned)
+⚠️ Database: user content needs persistence (gap)
+⚠️ Auth: need to distinguish users (gap)
+⚠️ File storage: user uploads need a home (gap)
+❌ Payments: not needed for now
+❌ Real-time: read-only content, not needed
+
+🔑 Top 3 Gaps
+1. Database — without it, everything vanishes on refresh
+2. Auth — can't tell who submitted what
+3. File storage — uploaded images need somewhere to live
+
+🛠️ Recommended: Vercel + Supabase (free tier: 500MB database + file storage)
+```
+
+---
+
+## Install
+
+### Codex
+
+```bash
+git clone https://github.com/kenanguo/tech-gap-checker.git /tmp/tech-gap-checker
+mkdir -p ~/.agents/skills/tech-gap-checker
+cp /tmp/tech-gap-checker/SKILL.md ~/.agents/skills/tech-gap-checker/
+```
+
+Add to `~/.codex/AGENTS.md`:
+
+```
+New project: run `tech-gap-checker` before writing any code.
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/kenanguo/tech-gap-checker.git /tmp/tech-gap-checker
+mkdir -p ~/.claude/skills/tech-gap-checker
+cp /tmp/tech-gap-checker/SKILL.md ~/.claude/skills/tech-gap-checker/
+```
+
+Add to `~/.claude/CLAUDE.md` with the same routing rule.
+
+No auto-routing? Just tell your AI: **"run tech-gap-checker"**
+
+---
+
+## How it works
+
+AI defaults to **System 1** — fast, intuitive, does exactly what you asked.
+
+This Skill forces a **System 2** pass first — slow, deliberate, scanning the whole picture for what's invisible.
+
+> *"Thinking, Fast and Slow" — Daniel Kahneman*
+
+---
+
 ## License
 
 MIT
