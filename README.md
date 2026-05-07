@@ -1,6 +1,6 @@
 # 🔍 Tech Gap Checker
 
-> 写代码之前，先把你项目里藏着的技术盲区全部扫出来。
+> AI 写代码之前，先做一轮基础设施盘点——数据库、部署、用户系统…都齐了吗？
 
 ---
 
@@ -101,7 +101,7 @@ AI 写代码默认是 System 1——直觉快反应，你说啥它写啥。
 
 # 🔍 Tech Gap Checker
 
-> Before AI writes a single line of code, scan your project for every hidden technical gap.
+> Before AI writes a single line of code, do an infrastructure audit — database, deployment, auth… got everything?
 
 ---
 
