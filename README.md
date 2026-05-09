@@ -14,7 +14,13 @@
 
 ## 它做什么
 
-在你描述完项目、AI 动手写代码之前，自动扫描八个维度：
+在你描述完项目、AI 动手写代码之前，分两步扫描：
+
+**第零步：项目类型识别**
+先判断你要做的是哪类项目（多人游戏？内容社区？工具？电商？）——然后自动加载该类型最容易漏掉的隐形需求清单。比如聚会游戏，会追问：房间怎么建？人满了怎么办？房主断线了怎么处理？游戏结束了怎么重开？
+
+**八维度技术扫描**
+然后系统地过一遍技术零件：
 
 | 维度 | 会追问 |
 |------|--------|
@@ -29,7 +35,7 @@
 
 每个维度三种输出：✅ 你提了  ‖  ⚠️ 你没提但项目需要  ‖  ❌ 不适用（说理由）
 
-最后给一份**推荐技术选型**，标注免费额度，直接能用。
+最后给一份**推荐技术选型**，标注费用（免费/有免费层/需付费）、额度上限、你的场景够不够用。
 
 ---
 
@@ -39,6 +45,7 @@
 
 ```
 📋 技术零件清单
+🏷️ 项目类型：多人游戏类（已加载对应隐形需求清单）
 ✅ 前端框架：React（你提了）
 ✅ 托管平台：Vercel（你提了）
 ⚠️ 数据库：用户内容需要持久化（盲区）
@@ -52,7 +59,7 @@
 2. 用户认证 — 不知道谁提交了什么
 3. 文件存储 — 用户上传的图需要有地方放
 
-🛠️ 推荐方案：Vercel + Supabase（免费层 500MB 数据库 + 文件存储）
+🛠️ 推荐方案：Vercel + Supabase（免费层 500MB 数据库 + 文件存储，够用）
 ```
 
 ---
@@ -115,7 +122,13 @@ This Skill fills in what you shouldn't have to know. You say *what* to build. It
 
 ## What it does
 
-Before AI starts coding, it automatically scans eight dimensions:
+Before AI starts coding, it runs a two-step scan:
+
+**Step Zero: Project Type Recognition**
+First identifies your project type (multiplayer game? content community? tool? e-commerce?) — then auto-loads a hidden-requirements checklist for that type. For a party game, it asks: How are rooms created? What's the player limit? What happens when the host disconnects? How do you restart after a game?
+
+**Eight-Dimension Tech Scan**
+Then systematically goes through every part of the stack:
 
 | Dimension | What it asks |
 |-----------|-------------|
@@ -130,7 +143,7 @@ Before AI starts coding, it automatically scans eight dimensions:
 
 Each dimension gets one of three flags: ✅ covered  ‖  ⚠️ gap (you didn't mention, but the project needs it)  ‖  ❌ not applicable (with reason)
 
-Then it delivers a **recommended tech stack** with free tier limits — ready to use.
+Then it delivers a **recommended tech stack** with pricing (free/freemium/paid), tier limits, and whether your use case fits.
 
 ---
 
@@ -140,6 +153,7 @@ After scanning, you'll see:
 
 ```
 📋 Parts Checklist
+🏷️ Project Type: Multiplayer Game (loaded hidden requirements checklist)
 ✅ Frontend: React (mentioned)
 ✅ Hosting: Vercel (mentioned)
 ⚠️ Database: user content needs persistence (gap)
@@ -153,7 +167,7 @@ After scanning, you'll see:
 2. Auth — can't tell who submitted what
 3. File storage — uploaded images need somewhere to live
 
-🛠️ Recommended: Vercel + Supabase (free tier: 500MB database + file storage)
+🛠️ Recommended: Vercel + Supabase (free tier: 500MB database + file storage, fits your use case)
 ```
 
 ---
